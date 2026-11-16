@@ -31,6 +31,8 @@ The format `±hours:minutes:seconds,milliseconds` only allows the `0123456789:,-
 - `+000000:0:4,00` yields **positive** `4`seconds
 
 ### Invalid examples
+- `345,43:87,646` hours, minutes and seconds can only be whole numbers; `345,43` is not one
+- `00:543.32:00,000` same reason as above; `543.32` is not a whole number
 - `3:01.4` dot (`.`) not allowed
 - `76:867;5,87655` semi-colon (`;`) not allowed
 - `—0,578` the first character is an em dash (`—`), not a hyphen (`-`)
